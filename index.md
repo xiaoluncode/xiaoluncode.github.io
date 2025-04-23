@@ -23,28 +23,46 @@ layout: default
 
 ## 专业技能
 
-- **Linux & Shell**：熟悉常用指令、shell 脚本，能搭建 `nginx+keepalived` 高可用负载均衡集群  
-- **容器化**：Docker、K8s 集群部署，了解 Zabbix 监控  
-- **数据库**：MySQL、Oracle 语法；深刻理解索引（B+Tree）、事务（ACID）、隔离级别与并发问题；SQL 优化  
-- **缓存**：Redis 持久化、缓存雪崩/穿透/击穿防护  
-- **Java 集合 & 并发**：ArrayList/LinkedList/HashMap 原理；ConcurrentHashMap、线程池、锁模型（synchronized、volatile）  
-- **前端**：HTML/CSS/JS + Vue3 + Element Plus + Axios  
-- **后端**：Spring IOC/AOP/MVC，SpringBoot + MyBatis(MyBatis-Plus)、Redis、Minio 集成；  
-- **微服务**：Nacos、OpenFeign、Sentinel、Gateway、Seata；流量控制、熔断、热点规则  
-- **工具链**：Maven、Git/Gitee 协作  
+- **Linux & Shell**：熟悉Linux操作系统，了解常用Linux基本指令，shell脚本的编写，能够实现nginx+keepalived高可用性负载均衡集群搭建；
+- **容器化**：能基于docker、k8s技术进行容器化应用的集群搭建，了解zabbix监控系统；  
+- **数据库**：熟练关系型数据库如MySQL、Oracle的语法，掌握多表联查和子查询，熟悉SQL优化，索引、事务，深入了解B+Tree索引结构，事务四大特性，三个并发问题，四种隔离级别；  
+- **缓存**：了解 Redis 缓存,熟悉数据类型,缓存持久化,对缓存雪崩、缓存击穿、缓存穿透有所了解； 
+- **Java 集合**：熟悉常用系统类和集合体系，掌握ArrayList、LinkedList实现原理，了解HashMap底层工作原理，掌握并发集合类如ConcurrentHashMap以确保线程安全；
+- **并发**：熟悉并发编程知识,如线程的调度方法、多线程创建的方式、线程池的核心参数，了解同步锁synchoronized的锁升级过程，读写锁的锁降级过程，volatile关键字；  
+- **前端**：了解html、css、js，用 Vue+ElementUI 等组件编写前端页面, Axios 技术调用后端API；  
+- **后端**：熟悉 Spring 框架中的 IOC、AOP,了解 MVC 架构思想,能够使用 SpringBoot 完成对 Mybatis、MybatisPlus、Redis、Minio等的整合,了解SpringBoot的工作原理；
+- **微服务**：了解Spring-Cloud微服务架构，熟悉使用Nacos、OpenFeign、Sentinel、Gateway、Seata等组件，了解流控、熔断、热点等规则；
+- **工具链**：熟悉 Maven 管理构建工具和 git 的基本使用,能够多人合作使用 gitee 远程仓库进行开发；  
 
+---
+## 实习经历
+
+### 致远互联  
+**岗位**：轮岗：实施、客开   （2025.3-2025.6）
+
+**负责项目**：中来股份合同管理系统
+
+**主要职责**  
+1. **参与需求调研**  
+   - 参加调研会议，调研客户需求，梳理合同管理流程细节，理清业务，编写会议纪要； 
+2. **部署平台与各组件**  
+   - 远程帮助客户搭建v8测试平台，部署各组件服务，如MySQL、Redis、ES、Nacos、K8s、GitLab等
+3. **驻场开发**  
+   - 利用致远的V8UDC低代码定制平台开发合同管理系统，从实体创建到详情、列表页再到规则、微流程的逻辑实现，配合同事和项目经理完成系统开发。
+4. **交付**  
+   - 完成系统的交付。
 ---
 
 ## 项目经历
 
 ### 智能电影推荐与多维评论分析平台  
-**技术栈**：Vue3 · Element Plus · Axios  |  SpringBoot3 · MyBatis · MySQL · Redis  
+**技术栈**：Vue3 · Element Plus · Axios  |  SpringBoot3 · MyBatis-Plus· MySQL · Redis  
 
 **主要职责**  
 1. **登录模块**  
    - 分为管理员和普通用户角色，用户成功登录会生成一个token并设置动态过期时间，存储于 Redis、cookie客户端、session服务器端中，再次访问时url请求携带未过期token可以跳过登录界面； 
 2. **系统首页**  
-   - 分页展示电影排行榜和公告信息，电影排名通过电影平均评分、基于NLP库处理的情绪评分、评论数加权计算评分实现排行榜
+   - 分页展示电影排行榜和公告信息，电影排名通过电影平均评分、情绪评分、评论数归一化实现排行榜
 3. **影评管理**  
    - CRUD、支持多维度筛选与排序  
 4. **信息管理**  
