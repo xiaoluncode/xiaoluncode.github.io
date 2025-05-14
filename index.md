@@ -23,16 +23,16 @@ layout: default
 
 ## 专业技能
 
-- **Linux & Shell**：熟悉Linux操作系统，了解常用Linux基本指令，shell脚本的编写，能够实现nginx+keepalived高可用性负载均衡集群搭建；
-- **容器化**：能基于docker、k8s技术进行容器化应用的集群搭建，了解zabbix监控系统；  
-- **数据库**：熟练关系型数据库如MySQL、Oracle的语法，掌握多表联查和子查询，熟悉SQL优化，索引、事务，深入了解B+Tree索引结构，事务四大特性，三个并发问题，四种隔离级别；  
-- **缓存**：了解Redis缓存,熟悉数据类型,缓存持久化,对缓存雪崩、缓存击穿、缓存穿透有所了解； 
-- **Java 集合**：熟悉常用系统类和集合体系，掌握ArrayList、LinkedList实现原理，了解HashMap底层工作原理，掌握并发集合类如ConcurrentHashMap以确保线程安全；
-- **并发**：熟悉并发编程知识,如线程的调度方法、多线程创建的方式、线程池的核心参数，了解同步锁synchoronized的锁升级过程，读写锁的锁降级过程，volatile关键字；  
-- **前端**：了解html、css、js，用 Vue+ElementUI 等组件编写前端页面, Axios 技术调用后端API；  
-- **后端**：熟悉Spring框架中的IOC、AOP,了解MVC架构思想,能够使用SpringBoot完成对Mybatis、MybatisPlus、Redis、Minio等的整合,了解SpringBoot的工作原理；
-- **微服务**：了解Spring-Cloud微服务/分布式架构，熟悉使用Nacos、OpenFeign、Sentinel、Gateway、Seata等组件，了解流控、熔断、热点等规则；
-- **工具链**：熟悉Maven管理构建工具和git的基本使用如合并分支，远程推送,能够多人合作使用远程仓库进行开发；  
+- **Linux & Shell**：熟悉 Linux 操作系统，了解常用 Linux 基本指令，shell 脚本的编写，能够实现 nginx+keepalived 高可用性负载均衡集群搭建；
+- **容器化**：能基于 docker、k8s 技术进行容器化应用的集群搭建，了解 zabbix 监控系统；  
+- **数据库**：熟练关系型数据库如 MySQL、Oracle 的语法，掌握多表联查和子查询，熟悉SQL优化，索引、事务，深入了解B+Tree索引结构，事务四大特性，三个并发问题，四种隔离级别；  
+- **缓存**：了解 Redis 缓存,熟悉数据类型,缓存持久化,对缓存雪崩、缓存击穿、缓存穿透有所了解； 
+- **Java 集合**：熟悉常用系统类和集合体系，掌握 ArrayList、LinkedList 实现原理，了解 HashMap 底层工作原理，掌握并发集合类如 ConcurrentHashMap 以确保线程安全；
+- **并发**：熟悉并发编程知识,如线程的调度方法、多线程创建的方式、线程池的核心参数，了解同步锁 synchoronized 的锁升级过程，读写锁的锁降级过程，volatile 关键字；  
+- **前端**：了解 html、css、js，用 Vue+ElementUI 等组件编写前端页面, Axios 技术调用后端API；  
+- **后端**：熟悉 Spring 框架中的 IOC、AOP,了解MVC架构思想,能够使用 SpringBoot 完成对 Mybatis、MybatisPlus、Redis、Minio 等的整合,了解 SpringBoot 的工作原理；
+- **微服务**：了解 Spring-Cloud 微服务/分布式架构，熟悉使用 Nacos、OpenFeign、Sentinel、Gateway、Seata 等组件,了解流控、熔断、热点等规则；
+- **工具链**：熟悉 Maven 管理构建工具和 git 的基本使用如合并分支,远程推送,能够多人合作使用远程仓库进行开发；  
 
 ---
 
