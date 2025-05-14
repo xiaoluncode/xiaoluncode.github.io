@@ -2,7 +2,7 @@
 layout: default
 ---
 
-![王亚伦照片](/assets/images/jianli.jpg){: style="width:150px; float:right; margin:10px 10px 2px 0px;" }
+![王亚伦照片](/assets/images/jianli.jpg){: style="width:150px; float:right; margin:10px 30px 0px 0px;" }
 
 # 王亚伦（Java 开发工程师）
 
