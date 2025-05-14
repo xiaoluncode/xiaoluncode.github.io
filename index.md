@@ -2,6 +2,8 @@
 layout: default
 ---
 
+![王亚伦照片](/assets/images/photo.jpg){: style="width:150px; border-radius:50%; float:right; margin:0 0 10px 10px;" }
+
 # 王亚伦（Java 开发工程师）
 
 - 📱 电话：17887313483  
