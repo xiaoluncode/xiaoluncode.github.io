@@ -41,20 +41,22 @@ layout: default
 ## 项目经历 
 
 ### SaaS 多租户微服务管理系统
-**技术栈：**Spring Boot 3 · Spring Cloud Alibaba（Nacos · Sentinel · Gateway · OpenFeign）· MyBatis-Plus · Seata · Redis · Spring Security · MinIO · Docker·Kubernetes
+**技术栈：**Spring Boot 3 · Spring Cloud Alibaba（Nacos · Sentinel · Gateway · OpenFeign）· MyBatis-Plus · Seata · Redis · MinIO · Docker·Kubernetes
 
 **项目简介：**  
 基于 SpringBlade Cloud 版本深度定制搭建的企业级 SaaS 平台，内置多租户隔离、分布式事务、流控熔断、统一网关、安全鉴权等微服务基础能力，支持租户在线注册、动态扩容与灰度发布。
 
 **主要职责：**
-1. **多租户核心框架**
-   - 实现「共享库/共享表」与「独立库/独立表」两种隔离策略，可按业务场景灵活切换；
+1. **多租户数据隔离**
+   - 在 `blade-data` 模块定制 `TenantFilter`，支持「共享库/表」与「独立库/表」两种模式；
+   - 框架底层自动在 SQL 拦截器加 `WHERE tenant_id=?`，实体无需声明；
 2. **统一网关与路由**
    - 基于 Spring Cloud Gateway 实现全局路由转发、鉴权拦截与动态限流；
-3. **配置与注册中心**
-   - 集成 Nacos 作为服务注册与配置中心，支持租户级别的隔离配置和灰度发布；
+3. **统一网关 & 流控限流**
+   - 基于 Gateway 实现全局路由转发；
+   - 集成 Sentinel，配置热点参数限流与熔断规则，结合 Nacos 做动态规则推送；
 4. **分布式事务与消息丢失解决方案**
-   - 利用 Seata TCC 模式解决跨服务事务一致性，使用 RabbitMQ 消息队列尽可能保证消息不丢失；
+   - 在跨服务场景使用 Seata TCC，使用 RabbitMQ 消息队列尽可能保证消息不丢失；
 5. **安全与鉴权**
    - 基于 Spring Security + JWT 实现统一认证，细粒度控制租户、角色、权限；
 6. **运维与容器化**
@@ -63,7 +65,7 @@ layout: default
 **核心亮点：**
 - **动态租户路由**：租户标识自动映射到对应数据源或数据表，无需侵入业务代码；
 - **高可用网关**：基于 Sentinel 实现流量熔断、热点限流，支持请求链路追踪；
-- **可插拔模块**：所有业务微服务按模块化设计，插件式接入，按需按版本更新。
+- **可插拔模块**：所有业务微服务按模块化设计，插件式接入，按需加载，降低耦合。
 
 ### 智能电影推荐与多维评论分析平台  
 **技术栈**：Vue3 · Element Plus · Axios  |  SpringBoot3 · MyBatis-Plus· MySQL · Redis  
