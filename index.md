@@ -42,7 +42,7 @@ layout: default
 
 ### RuoYi-Cloud 微服务平台（开源二次开发）
 
-**技术栈：**Spring Boot 2.7 · Spring Cloud Alibaba（Nacos · Sentinel · Gateway · OpenFeign）· MyBatis-Plus · Seata · Redis · ELK · SkyWalking · Docker · Kubernetes
+**技术栈：**Spring Boot 2.7 · Spring Cloud Alibaba（Nacos · Sentinel · Gateway · OpenFeign）· MyBatis-Plus · Seata · Redis
 
 **项目简介：**  
 基于开源 RuoYi-Cloud 架构二次开发，支持微服务注册、配置中心、鉴权网关、分布式事务、链路追踪等。
@@ -60,20 +60,20 @@ layout: default
 5. **第三方登录授权**
    - 集成just-auth实现第三方授权登录，支持Github、Gitee、微博等第三方平台的授权登录。
 6. **集成knife4j**
-   - 整合knife4j实现swagger文档增强：接口排序，在线调试，文档清晰，注解增强，容易上手。
+   - 整合knife4j实现swagger文档增强：接口排序，在线调试，文档清晰，注解增强。
 
 **核心亮点：**
-- 分库分表：热点数据单独拆出一张表。
-- 高可用微服务治理：集成 Nacos、Sentinel、SkyWalking、Seata 等组件，系统高可用。
+- **分库分表**：热点数据单独拆出一张表。
+- **高可用微服务治理**：集成 Nacos、Sentinel、SkyWalking、Seata 等组件，系统高可用。
 
 
 ---
 
-### SaaS 多租户微服务管理系统
+### SpringBlade多租户微服务管理系统（开源二次开发）
 **技术栈：**Spring Boot 3 · Spring Cloud Alibaba（Nacos · Sentinel · Gateway · OpenFeign）· MyBatis-Plus · Seata · Redis · MinIO · Docker·Kubernetes
 
 **项目简介：**  
-基于 SpringBlade Cloud 版本深度定制搭建的企业级 SaaS 平台，内置多租户隔离、分布式事务、流控熔断、统一网关、安全鉴权等微服务基础能力，支持租户在线注册、动态扩容与灰度发布。
+基于 SpringBlade Cloud 版本搭建的 SaaS 平台，内置多租户隔离、分布式事务、流控熔断、统一网关、安全鉴权等微服务基础能力。
 
 **主要职责：**
 1. **统一网关与路由**
@@ -84,13 +84,11 @@ layout: default
 3. **分布式事务与消息丢失解决方案**
    - 在跨服务场景使用 Seata TCC，使用 RabbitMQ 消息队列尽可能保证消息不丢失；
 4. **安全与鉴权**
-   - 基于 Spring Security + JWT 实现统一认证，细粒度控制租户、角色、权限；
-5. **运维与容器化**
-   - 使用 Docker 镜像构建、Kubernetes 编排部署
+   - 基于 Spring Security + JWT 实现统一认证，细粒度控制租户、角色权限；
 
 **核心亮点：**
-- **动态租户路由**：租户标识自动映射到对应数据源或数据表，无需侵入业务代码；
-- **高可用网关**：基于 Sentinel 实现流量熔断、热点限流，支持请求链路追踪；
+- **动态租户路由**：租户标识自动映射到对应数据源或数据表，无侵入业务代码；
+- **高可用系统**：基于 Sentinel 实现流量熔断、热点限流；
 - **可插拔模块**：所有业务微服务按模块化设计，插件式接入，按需加载，降低耦合。
 
 ### 智能电影推荐与多维评论分析平台  
