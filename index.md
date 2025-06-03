@@ -34,7 +34,7 @@ layout: default
 - **前端**：了解 html、css、js，用 Vue+ElementUI 等组件编写前端页面, Axios 技术调用后端API；
 - **后端**：熟悉 Spring 框架中的 IOC、AOP,了解MVC架构思想,能够使用 SpringBoot 完成对 Mybatis、MybatisPlus、Redis、Minio 等的整合,了解 SpringBoot 的工作原理；
 - **微服务**：了解 Spring-Cloud 微服务/分布式架构，熟悉使用 Nacos、OpenFeign、Sentinel、Gateway、Seata 等组件,了解流控、熔断、热点等规则；
-- **工具链**：熟悉 Maven 管理构建工具和 git 的基本使用如合并分支,远程推送,能够多人合作使用远程仓库与团队配合协助进行开发；
+- **工具链**：熟悉 Maven 管理构建工具和 git 的基本使用如合并分支,远程推送,能够多人合作使用远程仓库与团队配合协作进行开发；
 
 ---
 
@@ -44,7 +44,7 @@ layout: default
 **技术栈：**Vue + Element Plus + Axios ｜ SpringBoot + Mybatis-Plus + MySQL + Redis + Spring Cloud Alibaba（Nacos、Sentinel、OpenFeign）
 
 **项目简介：**  
-本项目为保险分销平台，支持保险公司产品配置管理、顾客投保、核保/出单、多级分销佣金计算、代理人年度业绩统计等核心功能。系统采用前后端分离架构，后端微服务间通过 OpenFeign + Nacos 实现注册发现，Sentinel 进行流量控制。
+本项目为保险分销平台，支持保险公司产品配置管理、顾客投保、核保/出单、多级分销佣金计算、代理人年度业绩统计等核心功能。系统采用前后端分离架构，后端微服务间通过 Nacos + OpenFeign 实现注册发现，Sentinel 进行流量控制。
 
 **主要职责：**
 1. 构建订单流程控制引擎
@@ -77,9 +77,9 @@ layout: default
    - 支持电影分类、详情、系统公告等模块管理，处理大批量数据异常捕获。
 
 **核心解决方案**
-- 防重复提交：短期 Token+Redis 限流，接口防抖；
-- 批量导入线程安全：ReentrantLock+线程池+事务；
-- 模糊查询性能优化：前缀索引 + Redis 缓存，实现毫秒级响应。
+- **防重复提交**：短期 Token+Redis 限流，接口防抖；
+- **批量导入线程安全**：ReentrantLock+线程池+事务；
+- **模糊查询性能优化**：前缀索引 + Redis 缓存，实现毫秒级响应。
 
 ---
 
